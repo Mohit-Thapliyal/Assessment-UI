@@ -302,12 +302,12 @@ const AssessmentForm = ({ isFormVisble, setIsFormVisble }) => {
         <div
           onClick={() => setIsFormVisble(false)}
           className={`fixed h-full w-full bg-black top-0 left-0 ease-in-out duration-300 opacity-50 ${
-            isFormVisble ? "mt-0" : "mt-[-100vh]"
+            isFormVisble ? "mt-0" : "mt-[-150vh]"
           }`}
         />
         <Form
-          className={`bg-white lg:h-[90%] overflow-hidden text-primary rounded-t-lg lg:rounded-b-lg duration-300 ease-in-out fixed lg:w-[40%] bottom-0 w-full ${
-            isFormVisble ? "mb-0 lg:bottom-auto " : "mb-[-100vh]"
+          className={`bg-white max-h-[95%] lg:h-[90%] overflow-hidden text-primary rounded-t-lg lg:rounded-b-lg duration-300 ease-in-out fixed lg:w-[40%] bottom-0 w-full ${
+            isFormVisble ? "mb-0 lg:bottom-auto " : "mb-[-150vh]"
           }`}
         >
           <div className="p-3 xl:px-6 flex justify-between items-center border-b border-b-stroke-light">
@@ -322,7 +322,7 @@ const AssessmentForm = ({ isFormVisble, setIsFormVisble }) => {
               <CrossIcon height={30} width={30} color="#D63500" />
             </button>
           </div>
-          <div className="flex flex-col gap-4 p-3 lg:h-[75%] xl:h-[80%] overflow-scroll xl:px-6 lg:gap-2 text-xs font-medium lg:text-base">
+          <div className="flex flex-col gap-4 p-3 h-[75vh] lg:h-[75%] xl:h-[80%] overflow-scroll xl:px-6 lg:gap-2 text-xs font-medium lg:text-base">
             <div className="flex flex-col gap-2">
               <label htmlFor="" className="">
                 Name of Assessment
